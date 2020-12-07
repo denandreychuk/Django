@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+       <table class="table table-striped">
+          <tbody>
+             <tr>
+                <td colspan="1">
+                   <form class="well form-horizontal">
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Name</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span><input id="name" name="name" placeholder="App name" class="form-control" required="true" value="{{ app.name }}" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Token</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span><input id="token" name="token" placeholder="App token" class="form-control" required="true" value="{{ app.token }}" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Status</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control">
+                                      <option>Active</option>
+                                      <option>Warning</option>
+                                      <option>Suspended</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+
+                      </fieldset>
+                     <div class="container bg-light">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-primary" href="#" role="save">Save</a>
+                            <a class="btn btn-danger" href="/apps" role="cancel">Cancel</a>
+                        </div>
+                    </div>
+
+                   </form>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </div>
